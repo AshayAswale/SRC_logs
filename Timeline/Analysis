@@ -1,0 +1,40 @@
+Run1:
+Comments: A very rare case of robots colliding with each other occured in team 1. Inspite of specially calculating the possible trajectories, they collided in the team 1. Team 2 failed to score anything after the first attempt. Usually, if excavator does not find volatile even after recovery method, then it means excavator was parked far away from the scout. But that should not have happened twice in a row, especially after the visual resets. 
+
+Team 1:
+  1. Seemingly collided with each other at the start [EOL]
+Team 2:
+  2. Collected 15, dropped 5 vols on the way, Deposited 10, Scored 4 points (ice; threshold 6)
+  3. Excavator did not find volatile after parking at volatile site
+  4. Excavator did not find volatile after parking at volatile site
+  5. Scout got stuck. [EOL]
+
+
+
+Run 2:
+Comments: There was a less occuring issue of hauler being stuck in parking state in hopper. We had a put in a hotfix on day -1 specificaly for this. It seems like that fix didn't work in the final code. For team 2, still couldn't understand why excavator couldn't reach scout. 
+
+Team 1:
+  1. Collected 19, dropped none, Deposited 19, Scored 13 points (ice; threshold 6)
+  2. Excavator  did not find volatile while digging. (Something went wrong while waiting for hauler)
+  3. Hauler got stuck parking at hopper. collected 20, dropped 7, failed to deposit 13 at hopper [EOL]
+Team 2:
+  1. Excavator never reached the scout. (movement checker node didn't fire, so Excavator was always moving. But couldn't ever reach the scout) [EOL]
+
+
+
+Run 3:
+Comments: Two things went wrong in the team 1. All the volatiles dug by excavator were dropped and hauler toppled near hopper. As for excavator dropping the volatiles, it is possible that the hauler would have parked down-hill and slipped away while excavator was digging. Otherwise it should not have happened, as we had multiple checks to avoid dropping the volatiles. And when the empty hauler went to hopper, it toppled. this toppled hauler_1 must have got in way of hauler_2 as it never came back to excavator after going back home.
+
+
+Team 1:
+  1. Collected 0, dropped none, Hauler stuck in park at hopper.
+  2. Excavator kept waiting for Hauler [EOL]
+Team 2:
+  1. Collected 19, dropped none, Deposited 19, Scored 10 points (Carbon dioxide; threshold 9)
+  2. Excavator  did not find volatile while digging. (Something gone wrong during waiting for hauler)
+  3. Excavator  did not find volatile while digging. (Something gone wrong during waiting for hauler) Hauler went back at hopper empty handed and possibly wrestled with hauler_1 during parking. Never got out of parking.
+  4. Excavator kept waiting for Hauler [EOL]
+
+---
+ [EOL]: End Of Life of the team. No further action is done by any of the team member after that

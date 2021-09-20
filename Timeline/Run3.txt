@@ -1,0 +1,45 @@
+Run 3: 
+
+Team 1 Volatile 1:
+  * Scout localized volatile at 125
+  * Excavator parked at scout at 190
+  * Hauler parked at 304
+  * Digging completed at 470 [0 volatiles in hauler]......
+  * For some reason, took whole hour to get to hopper, and parked at 2832
+  * Must have toppled during undock. Because it was never assigned for the next task to excavator
+
+Team 1 Volatlie 2:
+  * Excavator proceeds at 503
+  * Excavator parks at Scout at 603
+  * Hauler didn't get free, so remains in this state for the rest of the sim
+
+
+
+Team 2 Volatile 1:
+  * Scout localized volatile at 90
+  * Excavator parked at 162
+  * Hauler parks at 351
+  * Digging completed at 478 (Almost the same time as Team 1). [20 volatiles in hauler] (5-5-5-5)
+  * Parked at hopper 716 [19 volatiles in hauler] (all 19 deposited)
+  * Scored 10 points of Carbon Dioxide (WHAT A LUCK :slam:....... )
+
+Team 2 Volatile 2:
+  * Excavator proceeds at 494
+  * Excavator parks at 524
+  * Volatile found during recover at 881
+  * All parkings done at 991
+  * Failed after ballet at 1040
+
+Team 2 Volatile 3:
+  * Excavator proceeds at 1040
+  * Excavator parked at 1093
+  * Hauler failed to find Excav at 1318 Both initiate visual reset
+  * Hauler parks at 1480
+  * Again fails in ballet
+  * Hauler goes back to hopper
+  * Hauler topples at hopper...
+
+Team 2 Volatile 4:
+  * Finds volatile at 1531
+  * Excavator parks at 1734
+  * Excavator keeps waiting for hopper which was never going to come...

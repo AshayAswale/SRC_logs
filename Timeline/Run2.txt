@@ -1,0 +1,41 @@
+Run 2: 
+
+Team 1 Volatile 1:
+  * Volatile found at 101 localized at 139
+  * Excavator parks at 176
+  * Finds volatile at 186
+  * Hauler Parks at 368
+  * Excavation at 378. [20 Volatiles in Hauler] (5-5-5-5)
+  * Hauler Undocks at 507
+  * Reaches Hopper at 706 [19 volatiles in hauler]
+  * All volatiles deposited scoring 13 points (ICE)
+
+Team 1 Volatile 2:
+  * Excavator proceeds at 512
+  * Excavator parks at 579
+  * Finds volatile at 798 (confirmation of the digging site)
+  * Hauler fails to find excavator at 862
+  * Excavator Visual resets at 896
+  * After that, no longer able to find the volatile... (974)
+
+Team 1 Volatile 3:
+  * Excavator proceeds at 979
+  * Excavator visual reset at 1087
+  * Parks excavator at 1172
+  * Hauler parks at 1510
+  * Hauler Undocks at 1735 [20 points in hauler] (3-3-3-3-3-2-3)
+  * Hauler reaches processing plant at 1822 [13 points in hauler]
+  * Got stuck in Parking To Hopper.......
+
+
+
+Team 2 Volatile 1:
+  * Scout found volatile at 214
+  * Localized at 241
+  * Excavator got lost and Scout could not do visual reset at 593
+  * Excavator never reached the scout.
+  * Excavator keeps trying to get to the location for the rest of the simulation
+
+
+Comments:
+  * When the scout failed and excavator succeeded in visual reset, excavator got stuck in a visual reset loop. Excavator only kept on resetting its odometry for the rest of the simulation. Need to debug and see if this was a bug in the code

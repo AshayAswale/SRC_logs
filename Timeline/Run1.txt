@@ -1,0 +1,34 @@
+Run 1:
+
+Team 1 (Scout1-Excavator1-Hauler1):
+  * Scout 1 seems to have stopped moving at around 166.346 seconds (sim time)
+  * It is possible that it ran into Excavator and both toppled each other. Both stops moving at around same time, and never moves again.
+
+Team 2 (Scout2-Excavator2-Hauler2) - 
+Volatile 1:
+  * Scout found volatile at 76 seconds; localized at 116
+  * Excavator visual odom reset at 276. (possibly couldn't find scout)
+  * Excavator triggered GoToScoutRecovery at 306 (For some reason, it keeps switching to nav vision obstacle avoidance. Possibly, it could see scout, but maybe was too near to the scout or scout was hiding behind rocks)
+  * Excavator parked at 759
+  * Hauler-Excavator parking complete at 1133
+  * Digging 1152-1347 [Hauler Volatile score 15]
+  * Hauler undocks and starts going to lookout at 1364
+  * Hauler odom reset at 1395
+  * Parking at hopper 1564 [Hauler Volatile score 10]
+  * Dropped 4 volatiles in transit
+  * All 10 deposited to hopper, scored 4 points. (ice)
+
+Team 2 Volatile 2:
+  * Excavator Proceeds to find scout at 1364
+  * Excavator Visual reset starts at 1489 and fails at 1530
+  * Reaches Scout (by some miracle) at 1664
+  * Parks at 1675
+  * Volatile not found, even after recovery at 1830 (Most possible scenario, it did not park near scout. Its odometry must have been way off)
+  * Gives up and proceeds to third volatile at 1843
+
+Team 2 Volatile 3:
+  * Starts going to vol 3 at 1846
+  * Parks at scout at 1889
+  * Volatile not found even after recovery at 1967
+  * Gives up
+  * Scout gets stuck at 2186. Doesn't get out of it, hence nothing happens after this
